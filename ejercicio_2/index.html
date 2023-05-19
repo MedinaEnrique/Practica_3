@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tabla de Versiones</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head> 
+<body>
+  <div>
+  <div class="version-container mt-4">
+    <table class="table table-bordered">
+    <thead>
+      <tr class="titulos">
+        <th class="columna_version_fecha" style="width:5%">Versión</th>
+        <th class="columna_version_fecha" style="width:5%;">Fecha</th>
+        <th class="columna_resumen" style="width: 54%;">Resumen</th>
+        <th class="columna_desplegable"style="width: 12%;">Archivos</th>
+        <th class="columna_desplegable"style="width: 12%;">Detalles</th>
+        <th class="columna_desplegable"style="width: 12%;">Configuración</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td>0_0_1</td>
+        <td>22/03/2023</td> 
+        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Consequuntur id cumque sunt enim, atque magnam dolorem repellat excepturi temporibus sed non adipisci quasi repudiandae fugit dicta sequi ex.</td>
+          <td>
+            <p>
+            <a class="version_1 btn btn-primary" data-bs-toggle="collapse" href="#version_1" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Ver Archivos
+            </a>
+          </p>
+        </td>
+        <td>
+          <p>
+            <a class="detalles_1 btn btn-primary" data-bs-toggle="collapse" href="#detalles_1" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Ver Detalles
+            </a>
+          </p>
+        </td>
+        <td>
+          <p>
+          <a class="conf_1 btn btn-primary" data-bs-toggle="collapse" href="#conf_1" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Ver Config
+          </a>
+        </p>
+        </td>
+      </tr>
+      <tr>
+        <td>0_0_2</td>
+        <td>30/04/2023</td>
+        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic consequuntur, ullam illum autem,
+          reiciendis explicabo natus officiis blanditiis sequi dolorum culpa, et totam rem? Quisquam incidunt itaque ut saepe veniam!</td>
+          <td> 
+            <p>
+              <a class="version_2 btn btn-primary" data-bs-toggle="collapse" href="#version_2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Ver Archivos
+            </a>
+          </p>
+        </td>
+        <td>
+          <p>
+            <a class="detalles_2 btn btn-primary" data-bs-toggle="collapse" href="#detalles_2" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Ver Detalles
+            </a>
+          </p>
+        </td>
+        <td>
+          <p>
+            <a class="conf_2 btn btn-primary" data-bs-toggle="collapse" href="#conf_2" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Ver Config
+            </a>
+          </p>
+        </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div class="container-collapse">
+  <div class="collapse" id="version_1">
+    <div class="card card-body">
+      <h1>Version 0_0_1</h1>
+      <h3 style="text-align: center;">Archivos</h3>
+      <ol>
+        <li><a href="#"style="text-align: center;">Link de Archivo 1</a></li>
+        <li><a href="#"style="text-align: center;">Link de Archivo 2</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="collapse" id="version_2">
+    <div class="card card-body">
+      <h1>Version 0_0_2</h1>
+      <h3 style="text-align: center;">Archivos</h3>
+      <ol>
+        <li><a href="#"style="text-align: center;">Link de Archivo 1</a></li>
+        <li><a href="#"style="text-align: center;">Link de Archivo 2</a></li>
+      </ol>
+  </div>
+  </div>
+  <div class="collapse" id="detalles_1">
+    <div class="card card-body">
+      <h1 style="text-align: center;">Version 0_0_1</h1>
+      <h3 style="text-align: center;">Detalles</h3>
+      <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam quam disti!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam quam disti!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam quam disti!</li>
+      </ol>
+    </div>
+  </div>
+  <div class="collapse" id="detalles_2">
+    <div class="card card-body">
+      <h1 style="text-align: center;">Version 0_0_2</h1>
+      <h3 style="text-align: center;">Detalles</h3>
+      <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam quam disti!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam quam disti!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam quam disti!</li>
+      </ol>
+    </div>
+  </div>
+  <div class="collapse" id="conf_1">
+    <div class="card card-body">
+      <h1>Version 0_0_1</h1>
+      <h3>Configuraciones</h3>
+      <div class="accordion" id="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Archivo 0_0_1_0
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea exercitationem magnam tempore cum animi impedit corporis accusamus, nostrum eum? Earum, quasi sequi. Necessitatibus, adipisci! A exercitationem debitis in consectetur esse.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Archivo 0_0_1_1
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+            <div class="accordion-body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis provident voluptatum assumenda esse voluptate modi ad repudiandae corrupti delectus, similique iusto aliquid, earum sunt nostrum quod eius numquam quasi? Perferendis?
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <div class="collapse" id="conf_2">
+    <div class="card card-body">
+      <h1>Version 0_0_2</h1>
+      <h3>Configuraciones</h3>
+      <div class="accordion" id="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Archivo 0_0_2_0
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea exercitationem magnam tempore cum animi impedit corporis accusamus, nostrum eum? Earum, quasi sequi. Necessitatibus, adipisci! A exercitationem debitis in consectetur esse.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Archivo 0_0_2_1
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+            <div class="accordion-body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis provident voluptatum assumenda esse voluptate modi ad repudiandae corrupti delectus, similique iusto aliquid, earum sunt nostrum quod eius numquam quasi? Perferendis?
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div> 
+  <script src="versiones.js"></script>
+</body>
+</html>

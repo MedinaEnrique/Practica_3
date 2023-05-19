@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Versiones</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+  </head>
+  <body id="body">
+
+    <header>
+      <div class="icon__menu">
+        <i class="fas fa-bars" id="btn_open"></i>
+      </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+      <div class="name__page">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        <h4>PAQ</h4>
+      </div>
+
+      <div class="options__menu">
+        <a href="#" class="selected">
+          <div class="option">
+            <i class="fas fa-home" title="Inicio"></i>
+            <h4>Inicio</h4>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="option">
+            <i class="far fa-file" title="Portafolio"></i>
+            <h4>Portafolio</h4>
+          </div>
+        </a>
+        <a href="#">
+          <div class="option">
+            <i class="far fa-sticky-note" title="Blog"></i>
+            <h4>Blog</h4>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="option">
+            <i class="far fa-id-badge" title="Contacto"></i>
+            <h4>Contacto</h4>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="option">
+            <i class="far fa-address-card" title="Nosotros"></i>
+            <h4>Nosotros</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <main class="text-center">
+      <div class="tabla-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="columna_version">Versión</th>
+              <th class="columna_fecha">Fecha</th>
+              <th class="columna_resumen">Resumen</th>
+              <th class="columna_desplegable">Archivos</th>
+              <th class="columna_desplegable">Detalles</th>
+              <th class="columna_desplegable">Configuración</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-versiones">
+            <!-- Filas generadas dinámicamente con JavaScript -->
+            <tr>
+              <td>1.0</td>
+              <td>2023-01-01</td>
+              <td><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur laboriosam</p></td>
+              <td>
+                <button onclick="mostrarArchivos('1.0')">Ver archivos</button>
+              </td>
+              <td>
+                <button onclick="mostrarDetalles('1.0')">Ver detalles</button>
+              </td>
+              <td>
+                <button onclick="mostrarConfiguracion('1.0')">Ver configuraciones</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2.0</td>
+              <td>2023-03-01</td>
+              <td><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eveniet repudiandae, nesciunt voluptatem dicta</p></td>
+              <td>
+                <button onclick="mostrarArchivos('2.0')">Ver archivos</button>
+              </td>
+              <td>
+                <button onclick="mostrarDetalles('2.0')">Ver detalles</button>
+              </td>
+              <td>
+                <button onclick="mostrarConfiguracion('2.0')">Ver configuraciones</button>
+              </td>
+            </tr>
+            <!-- Otras filas de versiones -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Contenedor de archivos -->
+      <div class="card">
+      <div class="cuadroInformacion">
+      <div id="contenedor-archivos" style="display: none;">
+        <h3 id="titulo-archivos"></h3>
+        <h4>Archivos</h4>
+        <ul id="lista-archivos"></ul>
+      </div>
+
+      <!-- Contenedor de detalles -->
+      <div id="contenedor-detalles" style="display: none;">
+        <h3 id="titulo-detalles"></h3>
+        <h4>Detalles</h4>
+        <ul id="lista-detalles"></ul>
+      </div>
+
+      <!-- Contenedor de configuración -->
+      <div id="contenedor-configuracion" style="display: none;">
+        <h3 id="titulo-configuracion"></h3>
+        <ul id="lista-configuracion"></ul>
+      </div>
+    </div>
+  </div>
+    </main>
+    <script src="javascript.js"></script>
+  </body>
+</html>
